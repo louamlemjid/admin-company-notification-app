@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+  "name": "Custom New Tab and Homepage Extension",
+  "version": "1.0",
+  "description": "Overrides the new tab page and sets a custom homepage.",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+,
+"content_security_policy": "script-src 'self' ; object-src 'self'"
+}
+  
